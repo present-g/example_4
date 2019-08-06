@@ -1,0 +1,96 @@
+@import "vars";
+
+
+@media screen and (max-width: 780px) {
+
+	.header {
+		padding: 1.187rem;
+	}
+
+	.logo {
+		margin: 0;
+	}
+
+	.main-menu {
+			position: absolute;
+			z-index: 5;
+			width: 100%;
+			height: 100%;
+			top: -99999em;
+			left: 0;
+			background: $accent-color;
+			overflow: hidden;
+			opacity: 0;
+			&__list {
+				display: inline-block;
+				padding: 5rem 2rem;
+			}
+			&__link {
+				font-size: 2rem;
+				line-height: 2;
+			}
+	}
+	.toggle-menu {
+		display: block;
+	}
+}
+
+
+
+@media screen and (max-width: 816px) {
+	
+	.page-wrap {
+		padding: 0 .5rem;
+	}
+
+	.first-screen {
+		&__item {
+			padding-left: 0;
+			padding-right: 0;
+		}
+	}
+} 
+
+@media screen and (max-width: 830px) {
+	.respond-section__item {
+		min-width: 0;
+	}
+	.clients__person {
+		transform: translateX(-2rem);
+	}
+}
+
+@media screen and (max-width: 927px) {
+	.order-1 {
+		order: initial;
+	}
+}
+
+@media screen and (max-width: 1006px) {
+	
+	.page-wrap--first-screen {
+		//justify-content: space-around;
+	}
+
+	.first-screen {
+		&__wrap {
+			justify-content: center;
+		}
+	}
+}
+
+@media screen and (max-width: 1290px) {
+	.first-footer {
+		&__wrap {
+			flex-direction: column;
+			align-items: center;
+			padding: 0 .3rem;
+		}
+	}
+	.already-works {
+		margin-top: 2rem;
+		&__logo {
+			margin: 2rem;
+		}
+	}
+}
